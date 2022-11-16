@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.blok {
+  display: flex;
+  align-items: baseline;
+}
+
+.title-section {
+  @include font(700, 36px, 1.17, null);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--title-color);
+}

@@ -1,0 +1,27 @@
+.address {
+  font-style: normal;
+
+  &__list &__item + &__item {
+    margin-top: 9px;
+  }
+
+  &__link {
+    @include font(null, 14px, 1.71, 0.03em);
+    // font-size: 14px;
+    // line-height: 1.71;
+    // letter-spacing: 0.03em;
+    color: var(--white_alpha);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+
+    &--color-white {
+      color: var(--white);
+    }
+  }
+}
