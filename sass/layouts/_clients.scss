@@ -2,16 +2,40 @@
   /* background-color: var(--white); */
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .client {
   display: flex;
   gap: var(--card-set-gap);
+  flex-wrap: wrap;
 
   &__icon {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
     border: 1px solid var(--border-client);
     border-radius: 4px;

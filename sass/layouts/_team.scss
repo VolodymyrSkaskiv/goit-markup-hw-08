@@ -1,12 +1,18 @@
 .team {
   background-color: var(--bgr-gray);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .persons {
   display: flex;
   gap: var(--card-set-gap);
+  flex-wrap: wrap;
 
   &__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -14,6 +20,15 @@
     border-radius: 0px 0px 4px 4px;
     margin-left: auto;
     margin-right: auto;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+      // width: 354px;
+      @include column(2, 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      // width: 270px;
+      @include column(4, 30px);
+    }
   }
 }
 

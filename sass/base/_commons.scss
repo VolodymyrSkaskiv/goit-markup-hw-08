@@ -15,8 +15,10 @@ body {
 }
 
 .blok {
-  display: flex;
-  align-items: baseline;
+  @include desctop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .title-section {

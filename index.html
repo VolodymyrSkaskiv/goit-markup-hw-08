@@ -24,7 +24,7 @@
   </head>
   <body>
     <!--header-menu-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-list">
         <div class="blok">
           <a href="#" class="logo logo-header logo--color-black"
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!---->
     <main>
       <section class="hero overlay">
@@ -144,11 +144,7 @@
           <h2 class="title-section">Наша команда</h2>
           <ul class="persons">
             <li class="list persons__card">
-              <img
-                src="./images/igor_demyanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <img src="./images/igor_demyanenko.jpg" alt="Ігор Дем'яненко" />
               <div class="person">
                 <h3 class="person__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="person__profession">Product Designer</p>
@@ -185,11 +181,7 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img
-                src="./images/olga_repina.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <img src="./images/olga_repina.jpg" alt="Ольга Рєпіна" />
               <div class="person">
                 <h3 class="person__name">Ольга Рєпіна</h3>
                 <p lang="en" class="person__profession">Frontend Developer</p>
@@ -227,11 +219,7 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img
-                src="./images/mykola_tarasov.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <img src="./images/mykola_tarasov.jpg" alt="Микола Тарасов" />
               <div class="person">
                 <h3 class="person__name">Микола Тарасов</h3>
                 <p lang="en" class="person__profession">Marketing</p>
@@ -269,11 +257,7 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img
-                src="./images/myhajlo_ermakov.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <img src="./images/myhajlo_ermakov.jpg" alt="Михайло Єрмаков" />
               <div class="person">
                 <h3 class="person__name">Михайло Єрмаков</h3>
                 <p lang="en" class="person__profession">UI Designer</p>
@@ -366,67 +350,70 @@
     <!--footer logo adressa-->
     <footer class="footer">
       <div class="container blok">
-        <div>
-          <a href="#" class="logo logo--color-white logo-footer"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="address__list">
-              <li class="list address__item">
-                <a
-                  href="https://goo.gl/maps/2TKnYdL79pvqhKmQA"
-                  target="_blank"
-                  rel="noreferrer noopener noffolow"
-                  class="link address__link address__link--color-white"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer--tablet">
+          <div class="logo-address">
+            <a href="#" class="logo logo--color-white logo-footer"
+              ><span class="accent">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address__list">
+                <li class="list address__item">
+                  <a
+                    href="https://goo.gl/maps/2TKnYdL79pvqhKmQA"
+                    target="_blank"
+                    rel="noreferrer noopener noffolow"
+                    class="link address__link address__link--color-white"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="list address__item">
+                  <a href="mailto:info@devstudio.com" class="link address__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list address__item">
+                  <a href="tel:+380961111111" class="link address__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join join--margin">
+            <h2 class="join__title">Приєднуйтесь</h2>
+            <ul class="soc">
+              <li class="list">
+                <a href="" class="soc__icon soc__icon--color-footer">
+                  <svg width="20px" height="20px">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list address__item">
-                <a href="mailto:info@devstudio.com" class="link address__link"
-                  >info@devstudio.com</a
-                >
+              <li class="list">
+                <a href="" class="soc__icon soc__icon--color-footer">
+                  <svg width="20px" height="20px">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list address__item">
-                <a href="tel:+380961111111" class="link address__link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="list">
+                <a href="" class="soc__icon soc__icon--color-footer">
+                  <svg width="20px" height="20px">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list item-join">
+                <a href="" class="soc__icon soc__icon--color-footer">
+                  <svg width="20px" height="20px">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join join--margin">
-          <h2 class="join__title">Приєднуйтесь</h2>
-          <ul class="soc">
-            <li class="list">
-              <a href="" class="soc__icon soc__icon--color-footer">
-                <svg width="20px" height="20px">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list">
-              <a href="" class="soc__icon soc__icon--color-footer">
-                <svg width="20px" height="20px">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list">
-              <a href="" class="soc__icon soc__icon--color-footer">
-                <svg width="20px" height="20px">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list item-join">
-              <a href="" class="soc__icon soc__icon--color-footer">
-                <svg width="20px" height="20px">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="block-send">
           <h2 class="join__title">Підпишіться на розсилку</h2>
           <form class="form-send">
