@@ -1,19 +1,42 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desctop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .radio-nav {
   display: flex;
+  flex-wrap: wrap;
+  width: 350px;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+
+  @include tablet {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .card-set {
+  // width: 450px;
+  // @include tablet {
+  //   width: 354px;
+  // }
+  // @include desctop {
+  //   width: 370px;
+  // }
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
+  // @include tablet {
+  //   width: 354px;
+  // }
 
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
@@ -21,7 +44,14 @@
   &__item {
     position: relative;
     display: flex;
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+    flex-basis: 100%;
+    @include tablet {
+      flex-basis: calc(100% / 2 - var(--card-set-gap));
+    }
+    @include desctop {
+      flex-basis: calc(100% / 3 - var(--card-set-gap));
+    }
 
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
