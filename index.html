@@ -24,7 +24,7 @@
   </head>
   <body>
     <!--header-menu-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-list">
         <div class="blok">
           <a href="#" class="logo logo-header logo--color-black"
@@ -63,8 +63,50 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob__bt-open" data-menu-open>
+          <svg class="contact__icon" width="24" height="16">
+            <use href="./images/sprite.svg#icon-menu_24"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob is-hidden" data-menu>
+        <button type="button" class="mob__bt-close" data-menu-close>
+          <svg class="contact__icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close_24"></use>
+          </svg>
+        </button>
+        <ul class="list mob__menu">
+          <li class="list mob__menu_item">
+            <a href="" class="accent menu__link">Студія</a>
+          </li>
+          <li class="list mob__menu_item">
+            <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+          </li>
+          <li class="list mob__menu_item">
+            <a href="" class="menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="list mob__contact">
+          <li class="list mob__contact_item">
+            <a href="tel:+380961111111" class="contact__link link">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="list mob__contact_item">
+            <a href="mailto:info@devstudio.com" class="contact__link link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list mob__soc">
+          <li class="mob__soc_item">Instagram</li>
+          <li class="mob__soc_item">Twitter</li>
+          <li class="mob__soc_item">Facebook</li>
+          <li class="mob__soc_item">Linkedln</li>
+        </ul>
+      </div>
+    </header>
     <!---->
     <main>
       <section class="hero overlay">
@@ -144,7 +186,35 @@
           <h2 class="title-section">Наша команда</h2>
           <ul class="persons">
             <li class="list persons__card">
-              <img src="./images/igor_demyanenko.jpg" alt="Ігор Дем'яненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor_demyanenko.jpg    1x,
+                    ./images/igor_demyanenko_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor_demyanenko_tab.jpg    1x,
+                    ./images/igor_demyanenko_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor_demyanenko_mob.jpg    1x,
+                    ./images/igor_demyanenko_mob_2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/igor_demyanenko.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="person__profession">Product Designer</p>
@@ -181,7 +251,34 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img src="./images/olga_repina.jpg" alt="Ольга Рєпіна" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga_repina.jpg    1x,
+                    ./images/olga_repina_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga_repina_tab.jpg    1x,
+                    ./images/olga_repina_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga_repina_mob.jpg    1x,
+                    ./images/olga_repina_mob_2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/olga_repina.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                />
+              </picture>
               <div class="person">
                 <h3 class="person__name">Ольга Рєпіна</h3>
                 <p lang="en" class="person__profession">Frontend Developer</p>
@@ -219,7 +316,35 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img src="./images/mykola_tarasov.jpg" alt="Микола Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola_tarasov.jpg    1x,
+                    ./images/mykola_tarasov_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola_tarasov_tab.jpg    1x,
+                    ./images/mykola_tarasov_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola_tarasov_mob.jpg    1x,
+                    ./images/mykola_tarasov_mob_2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mykola_tarasov.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Микола Тарасов</h3>
                 <p lang="en" class="person__profession">Marketing</p>
@@ -257,7 +382,35 @@
               </div>
             </li>
             <li class="list persons__card">
-              <img src="./images/myhajlo_ermakov.jpg" alt="Михайло Єрмаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/myhajlo_ermakov.jpg    1x,
+                    ./images/myhajlo_ermakov_2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/myhajlo_ermakov_tab.jpg    1x,
+                    ./images/myhajlo_ermakov_tab_2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/myhajlo_ermakov_mob.jpg    1x,
+                    ./images/myhajlo_ermakov_mob_2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/myhajlo_ermakov.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
+              </picture>
+
               <div class="person">
                 <h3 class="person__name">Михайло Єрмаков</h3>
                 <p lang="en" class="person__profession">UI Designer</p>
@@ -516,5 +669,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

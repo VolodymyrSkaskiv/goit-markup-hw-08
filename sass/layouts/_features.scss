@@ -3,13 +3,18 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  @include tablet {
+    width: 738px;
+  }
   @media screen and (min-width: 1200px) {
+    width: 1170px;
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .section-img {
-  padding-top: 94px;
+  // padding-top: 94px;
   padding-bottom: 94px;
 
   @media screen and (max-width: 1199px) {
@@ -23,6 +28,12 @@
   gap: var(--card-set-gap);
   flex-wrap: wrap;
   // width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
 
   &__item {
     list-style: none;

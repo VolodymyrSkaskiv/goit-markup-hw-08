@@ -1,4 +1,5 @@
 .form {
+  // width: 370px;
   &__fild {
     margin-bottom: 10px;
   }
@@ -93,12 +94,14 @@
       gap: 7px;
       align-items: center;
       justify-content: center;
-      @include font(null, 14px, 1.71, 0.03em);
-      // font-size: 14px;
-      // line-height: 1.71;
-      // letter-spacing: 0.03em;
 
-      color: var(--text-color);
+      @include font(null, 12px, 1.17, 0.03em);
+      color: #757575;
+
+      @include desctop {
+        @include font(null, 14px, 1.71, 0.03em);
+        color: var(--text-color);
+      }
     }
   }
 
