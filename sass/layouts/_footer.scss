@@ -8,19 +8,26 @@
   background-color: var(--bgr-dark);
   @include mobile {
     min-width: var(--momile);
+    margin-bottom: 60px;
   }
   @include tablet {
     min-width: var(--tablet);
   }
   &--tablet {
+    @include mobile {
+      margin-bottom: 60px;
+    }
     @include tablet {
       display: flex;
       gap: 165px;
       justify-content: center;
+      align-items: baseline;
+      // margin-bottom: 60px;
     }
     @include desctop {
       gap: 0px;
-      align-items: baseline;
+      // align-items: baseline;
+      margin-bottom: 0;
       // justify-content: center;
     }
   }
@@ -37,9 +44,9 @@
   }
 }
 
-.join {
-  margin-bottom: 60px;
-}
+// .join {
+//   margin-bottom: 60px;
+// }
 
 .join--margin {
   @include desctop {
@@ -73,7 +80,6 @@
   }
 
   @include desctop {
-    margin-left: 93px;
     margin-right: 0;
     width: 570px;
   }

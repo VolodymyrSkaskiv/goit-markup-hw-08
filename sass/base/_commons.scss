@@ -17,6 +17,12 @@ body {
 .blok {
   @include tablet {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include desctop {
+    // display: flex;
     align-items: baseline;
   }
 }

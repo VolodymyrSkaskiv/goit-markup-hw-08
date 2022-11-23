@@ -83,6 +83,12 @@ body {
 @media screen and (min-width: 768px) {
   .blok {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blok {
     align-items: baseline;
   }
 }
@@ -112,17 +118,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -732,6 +738,7 @@ a.accent.accent-item::after {
 @media screen and (min-width: 480px) {
   .footer {
     min-width: var(--momile);
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -739,17 +746,23 @@ a.accent.accent-item::after {
     min-width: var(--tablet);
   }
 }
+@media screen and (min-width: 480px) {
+  .footer--tablet {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer--tablet {
     display: flex;
     gap: 165px;
     justify-content: center;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer--tablet {
     gap: 0px;
-    align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
@@ -763,10 +776,6 @@ a.accent.accent-item::after {
     margin-bottom: 20px;
     margin-right: 0;
   }
-}
-
-.join {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -801,7 +810,6 @@ a.accent.accent-item::after {
 }
 @media screen and (min-width: 1200px) {
   .block-send {
-    margin-left: 93px;
     margin-right: 0;
     width: 570px;
   }
@@ -857,9 +865,13 @@ a.accent.accent-item::after {
   text-align: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .address {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
     text-align: left;
   }
 }
