@@ -316,7 +316,7 @@ a.accent.accent-item::after {
   content: "";
   display: block;
   position: relative;
-  bottom: -33px;
+  bottom: -38px;
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
