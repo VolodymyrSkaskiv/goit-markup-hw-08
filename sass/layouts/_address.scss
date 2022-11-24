@@ -1,7 +1,7 @@
 .address {
   font-style: normal;
   text-align: center;
-  margin-bottom: 60px;
+
   @include tablet {
     margin-bottom: 0;
   }
@@ -38,5 +38,12 @@
     &--color-white {
       color: var(--white);
     }
+  }
+}
+
+.logo-address {
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0px;
   }
 }

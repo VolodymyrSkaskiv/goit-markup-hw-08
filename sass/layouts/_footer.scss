@@ -6,17 +6,13 @@
   margin-right: auto;
 
   background-color: var(--bgr-dark);
-  @include mobile {
-    min-width: var(--momile);
-    margin-bottom: 60px;
-  }
+
   @include tablet {
     min-width: var(--tablet);
   }
-  &--tablet {
-    @include mobile {
-      margin-bottom: 60px;
-    }
+  &--mobile {
+    margin-bottom: 60px;
+
     @include tablet {
       display: flex;
       gap: 165px;
@@ -41,6 +37,7 @@
   @include desctop {
     margin-bottom: 20px;
     margin-right: 0;
+    justify-content: flex-start;
   }
 }
 

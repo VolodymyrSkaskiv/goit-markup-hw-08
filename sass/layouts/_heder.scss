@@ -148,10 +148,7 @@ a.accent.accent-item::after {
   top: 0;
   position: fixed;
   z-index: 2;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-bottom: 48px;
-  padding-right: 15px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -182,9 +179,9 @@ a.accent.accent-item::after {
   }
 }
 
-.mob__menu {
-  margin-bottom: 100px;
-}
+// .mob__menu {
+//   margin-bottom: 100px;
+// }
 
 .mob__menu_item {
   font-weight: 500;

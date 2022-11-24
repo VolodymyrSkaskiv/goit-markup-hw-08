@@ -354,10 +354,7 @@ a.accent.accent-item::after {
   top: 0;
   position: fixed;
   z-index: 2;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-bottom: 48px;
-  padding-right: 15px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -386,10 +383,6 @@ a.accent.accent-item::after {
 }
 .mob__bt-close:hover, .mob__bt-close:focus {
   fill: var(--accent-color);
-}
-
-.mob__menu {
-  margin-bottom: 100px;
 }
 
 .mob__menu_item {
@@ -735,24 +728,16 @@ a.accent.accent-item::after {
   margin-right: auto;
   background-color: var(--bgr-dark);
 }
-@media screen and (min-width: 480px) {
-  .footer {
-    min-width: var(--momile);
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer {
     min-width: var(--tablet);
   }
 }
-@media screen and (min-width: 480px) {
-  .footer--tablet {
-    margin-bottom: 60px;
-  }
+.footer--mobile {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .footer--tablet {
+  .footer--mobile {
     display: flex;
     gap: 165px;
     justify-content: center;
@@ -760,7 +745,7 @@ a.accent.accent-item::after {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer--tablet {
+  .footer--mobile {
     gap: 0px;
     margin-bottom: 0;
   }
@@ -775,6 +760,7 @@ a.accent.accent-item::after {
   .logo-footer {
     margin-bottom: 20px;
     margin-right: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -863,7 +849,6 @@ a.accent.accent-item::after {
 .address {
   font-style: normal;
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .address {
@@ -902,6 +887,15 @@ a.accent.accent-item::after {
 }
 .address__link--color-white {
   color: var(--white);
+}
+
+.logo-address {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .logo-address {
+    margin-bottom: 0px;
+  }
 }
 
 .backdrop {
