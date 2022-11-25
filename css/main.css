@@ -89,7 +89,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .blok {
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -256,6 +256,11 @@ body {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu {
+    align-items: center;
+  }
+}
 .menu .menu__item + .menu__item {
   margin-left: 51px;
 }
@@ -288,7 +293,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
   }
 }
@@ -299,6 +304,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contact .contact__item + .contact__item {
+    margin-top: 0px;
     margin-left: 30px;
   }
 }
@@ -323,7 +329,7 @@ a.accent.accent-item::after {
 }
 @media screen and (min-width: 1200px) {
   a.accent.accent-item::after {
-    bottom: -24px;
+    bottom: -26px;
   }
 }
 

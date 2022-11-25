@@ -36,6 +36,9 @@
     display: flex;
     align-items: baseline;
   }
+  @include desctop {
+    align-items: center;
+  }
 
   & &__item + &__item {
     margin-left: 51px;
@@ -69,7 +72,7 @@
 
   @include desctop {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
   }
 
@@ -78,6 +81,7 @@
       margin-top: 10px;
     }
     @include desctop {
+      margin-top: 0px;
       margin-left: 30px;
     }
   }
@@ -106,7 +110,7 @@ a.accent.accent-item::after {
   position: relative;
   bottom: -38px;
   @include desctop {
-    bottom: -24px;
+    bottom: -26px;
   }
 
   height: 4px;
